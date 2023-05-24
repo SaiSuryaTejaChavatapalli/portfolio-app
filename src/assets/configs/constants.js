@@ -34,7 +34,7 @@ export const projectsList = [
       "React.js",
       "Redux.js",
       "Fetch API",
-      "Material UI",
+      "Material UI Icons",
       "React Player",
     ],
     liveLink: "https://youtube-clone-sai-surya-teja.vercel.app/",

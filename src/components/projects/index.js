@@ -18,7 +18,7 @@ const Projects = () => {
                 alt="project-card-img"
                 className="project-card-img"
               />
-              <div>
+              <div className="project-card-bottom-container">
                 <h2 className="project-card-heading">{item.name}</h2>
                 <ul className="project-card-skills">
                   {/* {item?.techUsed?.join("➼")} */}
