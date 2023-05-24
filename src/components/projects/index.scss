@@ -1,5 +1,5 @@
 .projects-page {
-  margin-left: 80px;
+  margin-left: 10%;
   height: 100vh;
   overflow-y: scroll;
   .projects-heading {
@@ -8,40 +8,62 @@
     text-align: center;
   }
   .project-card-container {
-    font-family: "roboto";
+    font-family: "sans-serif";
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 10px;
     .project-card {
       box-shadow: 0px 0px 10px rgba(25, 25, 25, 0.1);
-
       background-color: #f3f2f2;
       border-radius: 10px;
-      padding: 10px;
-      width: 350px;
-      height: 350px;
+      padding: 8px;
+      width: 320px;
+      height: 320px;
       margin: 10px;
       .project-card-img {
         width: 100%;
-        height: 50%;
+        height: 40%;
         object-fit: cover;
       }
       .project-card-heading {
         color: #1d1d2c;
         font-family: "Open Sans", sans-serif;
+        // background-color: red;
+        font-size: 18px;
+        color: rgb(61, 59, 59);
+        margin: 10px 10px 0 0;
       }
       .project-card-skills {
         color: #1d1d2c;
+        font-size: 15px;
         font-family: "Open Sans", sans-serif;
+        // background-color: yellow;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 2px;
+        list-style-type: none;
+
+        margin-top: 5px;
+        gap: 10px;
+        .project-card-skill {
+          margin-right: 5px;
+          font-size: 12px;
+        }
       }
       .project-card-description {
         color: #1d1d2c;
+        font-size: 15px;
         font-family: "Open Sans", sans-serif;
       }
       .project-link-icon {
         font-size: 20px;
-        margin: 10px;
         color: #1d1d2c;
+        margin-bottom: 10px;
+        margin-right: 15px;
       }
     }
   }

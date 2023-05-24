@@ -20,10 +20,15 @@ const Projects = () => {
               />
               <div>
                 <h2 className="project-card-heading">{item.name}</h2>
-                <h4 className="project-card-skills">
-                  HTML,Tailwind CSS,JS,React,React router dom
-                </h4>
-                <h3 className="project-card-description">{item.description}</h3>
+                <ul className="project-card-skills">
+                  {/* {item?.techUsed?.join("➼")} */}
+                  {item.techUsed.map((tech, id) => (
+                    <li key={id} className="project-card-skill">
+                      ‣{tech}
+                    </li>
+                  ))}
+                </ul>
+                <p className="project-card-description">{item.description}</p>
                 <div>
                   <a target="_blank" href={item.gitHubLink} rel="noreferrer">
                     <FontAwesomeIcon

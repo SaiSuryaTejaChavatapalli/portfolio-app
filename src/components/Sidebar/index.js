@@ -1,22 +1,22 @@
-import './index.scss'
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
+import "./index.scss";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import LogoS from "../../assets/images/logo-s.png";
 // import LogoSubtitle from '../../assets/images/logo_sub.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faHome,
   faUser,
   faProjectDiagram,
-} from '@fortawesome/free-solid-svg-icons'
+} from "@fortawesome/free-solid-svg-icons";
 
 import {
-  faFacebook,
+  faTwitter,
   faGithub,
   faLinkedin,
   faYoutube,
-} from '@fortawesome/free-brands-svg-icons'
+} from "@fortawesome/free-brands-svg-icons";
 const Sidebar = () => {
   return (
     <div className="nav-bar">
@@ -72,6 +72,16 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faGithub} color="#4d4de" />
           </a>
         </li>
+
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/saisuryateja8"
+          >
+            <FontAwesomeIcon icon={faTwitter} color="#4d4de" />
+          </a>
+        </li>
         <li>
           <a
             target="_blank"
@@ -81,14 +91,9 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faYoutube} color="#4d4de" />
           </a>
         </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">
-            <FontAwesomeIcon icon={faFacebook} color="#4d4de" />
-          </a>
-        </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
