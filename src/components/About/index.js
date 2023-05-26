@@ -2,6 +2,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import Loader from "react-loaders";
 import { icons } from "../../assets/icons/icons";
+import LaunchIcon from "@mui/icons-material/Launch";
 const About = () => {
   // className = 'container about-page'
   // className = 'text-zone'
@@ -14,6 +15,21 @@ const About = () => {
             idx={15}
           />
         </h1>
+        <div className="about-container-resume-link">
+          <span className="about-container-resume-link-description">
+            Have a look at my Resume
+          </span>
+          <a
+            href="https://drive.google.com/file/d/15vDER06Y9KmfK9OENI9rBCwpx1yXkkEZ/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LaunchIcon
+              fontSize="large"
+              className="about-container-resume-link-icon"
+            />
+          </a>
+        </div>
         <p className="about-container-description">
           <h3>Welcome to my portfolio website!</h3>I am Sai Surya Teja,An
           ambitious Frontend developer specializing in ReactJS, JavaScript, and
