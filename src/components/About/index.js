@@ -7,7 +7,7 @@ const About = () => {
   // className = 'text-zone'
   return (
     <div className="about-page container">
-      <div className="about-container">
+      <div className="about-container ">
         <h1 className="about-container-heading">
           <AnimatedLetters
             strArray={["A", "b", "o", "u", "t", " ", "m", "e"]}
@@ -48,7 +48,7 @@ const About = () => {
           experiences.
         </p>
       </div>
-      <div className="skill-container">
+      <div className="skill-container ">
         <div className="skill-icon-container">
           <img src={icons?.HTMLIcon} alt="html-icon" className="skill-icon" />
           <h2 className="skill-label">HTML5</h2>

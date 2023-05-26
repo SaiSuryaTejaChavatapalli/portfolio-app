@@ -1,10 +1,11 @@
-import { Route, Routes } from 'react-router-dom'
-import './App.scss'
-import Layout from './components/Layout'
-import Home from './components/Home'
-import About from './components/About'
-import Contact from './components/Contact'
-import Projects from './components/projects'
+import { Route, Routes } from "react-router-dom";
+import "./App.scss";
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Projects from "./components/projects";
+import ErrorFallback from "./components/ErrorFallback/ErrorFallback";
 function App() {
   return (
     <Routes>
@@ -14,8 +15,9 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="projects" element={<Projects />} />
       </Route>
+      <Route path="*" element={<ErrorFallback />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

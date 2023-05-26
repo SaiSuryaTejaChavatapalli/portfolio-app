@@ -1,0 +1,25 @@
+.error-fallback-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .error-fallback-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: auto;
+
+    .error-fallback-image {
+      padding: 0;
+      width: 400px;
+      height: 400px;
+    }
+    .error-fallback-button {
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      color: black;
+    }
+  }
+}

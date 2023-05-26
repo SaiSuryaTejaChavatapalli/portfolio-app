@@ -11,8 +11,10 @@ import GitIcon from "./git-icon.svg";
 import GitHubIcon from "./github-icon.svg";
 import MuiIcon from "./material-ui-icon.svg";
 import HomeFaceIcon from "./home-face-icon.svg";
+import ErrorFallBackImg from "./something-went-wrong.svg";
 // import ReactHookFromIcon from "./react-hook-form-icon.svg";
 export const icons = {
+  ErrorFallBackImg,
   HomeFaceIcon,
   TailwindIcon,
   ReactIcon,

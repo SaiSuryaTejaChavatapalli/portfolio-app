@@ -22,11 +22,13 @@ const Home = () => {
         </div>
         <Loader type="pacman" />
       </div>
-      <img
-        src={icons.HomeFaceIcon}
-        alt="home-face-icon"
-        className="home-face-img"
-      />
+      <div className="container home-display-img-container">
+        <img
+          src={icons.HomeFaceIcon}
+          alt="home-face-icon"
+          className="home-face-img"
+        />
+      </div>
     </div>
   );
 };

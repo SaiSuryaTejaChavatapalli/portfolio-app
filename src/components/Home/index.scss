@@ -53,9 +53,13 @@
   }
 }
 
+.home-display-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
 .home-face-img {
-  margin-left: 38%;
-  margin-top: 5%;
   height: 50%;
   width: 50%;
 }
